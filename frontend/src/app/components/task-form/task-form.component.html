@@ -1,0 +1,33 @@
+<button class="btn btn-success" (click)="toggleForm()">
+    <span *ngIf="!showForm">+ Agregar Tarea</span>
+    <span *ngIf="showForm">✖ Cerrar</span>
+</button>
+
+<!-- Modal -->
+<div *ngIf="showForm" class="modal fade show d-block" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nueva Tarea</h5>
+                <button type="button" class="close btn btn-danger" (click)="toggleForm()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form (submit)="addTask()">
+                    <div class="mb-3">
+                        <label for="taskTitle" class="form-label">Título</label>
+                        <input [(ngModel)]="title" name="taskTitle" class="form-control"
+                            placeholder="Ingrese el título">
+                        <small *ngIf="showTitleError" class="text-danger">El título es obligatorio.</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taskDescription" class="form-label">Descripción</label>
+                        <textarea [(ngModel)]="description" name="taskDescription" class="form-control"
+                            placeholder="Ingrese la descripción"></textarea>
+                        <small *ngIf="showDescriptionError" class="text-danger">El contenido es obligatorio.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Guardar Tarea</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

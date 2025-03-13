@@ -1,0 +1,17 @@
+<div>
+    <h2 class="welcome-text">📌 Organiza tus Tareas</h2>
+    <p class="subtitle">Administra, completa y elimina tus tareas fácilmente</p>
+    <app-task-form (taskAdded)="loadTasks()"></app-task-form>
+
+    <!-- Filtros -->
+    <div class="filter-buttons text-center my-3">
+        <button class="btn btn-primary mx-1" (click)="setFilter('all')">Todas</button>
+        <button class="btn btn-success mx-1" (click)="setFilter('completed')">Completadas</button>
+        <button class="btn btn-secondary mx-1" (click)="setFilter('pending')">Pendientes</button>
+    </div>
+
+    <div class="task-grid d-flex justify-content-center flex-wrap">
+        <app-task-item *ngFor="let task of filteredTasks" [task]="task" (taskUpdated)="loadTasks()"
+            (taskDeleted)="loadTasks()"></app-task-item>
+    </div>
+</div>
