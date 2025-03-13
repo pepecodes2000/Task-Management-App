@@ -1,59 +1,81 @@
-# Frontend
+# 📌 Task Management App - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.2.
+Este es el frontend de la aplicación **Task Management App**, desarrollado con **Angular** y utilizando **Bootstrap 5** para el diseño responsivo.
 
-## Development server
+## 🚀 Tecnologías Utilizadas
 
-To start a local development server, run:
+- **Angular (Standalone Components)** (Framework para la interfaz de usuario)
+- **Bootstrap 5** (Para estilos y diseño responsivo)
+- **NgClass & NgIf** (Para manejo dinámico de estilos y condiciones)
+- **HttpClient** (Para comunicación con el backend en Node.js)
 
-```bash
-ng serve
+---
+
+## 📂 Instalación y Configuración
+
+### 🔹 Clonar el repositorio
+```sh
+  git clone https://github.com/tu-repo/task-management-app.git
+  cd task-management-app/frontend
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+### 🔹 Instalar Angular CLI *(si no lo tienes ya instalado)*
+```sh
+npm install -g @angular/cli
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+### 🔹 Instalar dependencias
+```sh
+npm install
 ```
 
-## Building
+### 🔹 Ejecutar la aplicación
+```sh
+ng serve --o
+```
+La aplicación se abrirá en `http://localhost:4200`
 
-To build the project run:
+---
 
-```bash
-ng build
+## 🎯 Funcionalidades
+
+✅ **Agregar tareas con título y descripción**  
+✅ **Marcar tareas como completadas o pendientes**  
+✅ **Eliminar tareas**  
+✅ **Filtrar tareas (todas, completadas, pendientes)**  
+✅ **Interfaz responsiva y atractiva con Bootstrap**  
+✅ **Conexión en tiempo real con el backend en Node.js**  
+
+---
+
+## 📂 Estructura del Proyecto
+
+```
+frontend/
+│── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── task-list/
+│   │   │   ├── task-item/
+│   │   │   ├── task-form/
+│   │   ├── services/
+│   │   │   ├── task.service.ts
+│   │   ├── app.component.ts
+│── angular.json
+│── package.json
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **`components/`** → Contiene los componentes de la app (Lista, Item y Formulario de Tareas).  
+- **`services/`** → Contiene `task.service.ts`, que maneja las peticiones HTTP al backend.  
+- **`app.component.ts`** → Componente raíz de la aplicación.  
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🛠️ Mejoras Futuras
 
-```bash
-ng test
-```
+- 📅 **Agregar fechas de vencimiento a las tareas**  
+- 📌 **Sistema de prioridades (Alta, Media, Baja)**  
+- 🎨 **Mejorar la interfaz con más animaciones y transiciones**  
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
