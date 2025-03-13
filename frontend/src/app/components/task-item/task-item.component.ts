@@ -1,3 +1,8 @@
+// Author: José Geovanny Mejía Ramos / Frontend Developer
+// Date: 2025 / 03 / 13
+// Descripcion, este componente se encarga de mostrar la tarea 
+// y de actualizar su estado de completado o eliminarla
+
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { NgClass } from '@angular/common'; 

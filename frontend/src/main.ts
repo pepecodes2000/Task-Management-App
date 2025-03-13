@@ -1,3 +1,8 @@
+// Author: José Geovanny Mejía Ramos / Frontend Developer
+// Date: 2025 / 03 / 13
+// Este archivo es el punto de entrada de la aplicación Angular. 
+// Aquí se importan los módulos necesarios y se inicia la aplicación.
+
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http'; // Importar HttpClient
 import { FormsModule } from '@angular/forms'; // Importar FormsModule

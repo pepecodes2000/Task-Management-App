@@ -1,3 +1,13 @@
+// Author: José Geovanny Mejía Ramos / Frontend Developer
+// Date: 2025 / 03 / 13
+// Codigo de la clase TaskFormComponent
+// Importamos las dependencias necesarias
+// Importamos el decorador Component de Angular core
+// Importamos el decorador Output y EventEmitter de Angular core
+// Importamos el servicio TaskService
+// Importamos NgIf de Angular common
+// Importamos FormsModule de Angular forms
+
 import { Component, Output, EventEmitter } from '@angular/core';
 import { TaskService } from '../../services/task.service';
 import { NgIf } from '@angular/common'; 

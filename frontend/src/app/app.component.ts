@@ -1,3 +1,9 @@
+// Author: José Geovanny Mejía Ramos / Frontend Developer
+// Date: 2025 / 03 / 13
+// Ruta inicial de la aplicación
+// este archivo es el punto de entrada de la aplicación Angular
+// realiza la configuración de la aplicación y la inicia
+
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideHttpClient } from '@angular/common/http'; // Importar HttpClient

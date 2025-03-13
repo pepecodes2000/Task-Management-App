@@ -1,3 +1,8 @@
+// Author: José Geovanny Mejía Ramos / Frontend
+// Date: 2025 / 03 / 13
+// Este archivo se encarga de definir un servicio para realizar peticiones HTTP al backend
+// y obtener, agregar, actualizar y eliminar tareas de la base de datos.
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';

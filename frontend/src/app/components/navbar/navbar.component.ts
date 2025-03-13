@@ -1,3 +1,7 @@
+// Author: José Geovanny Mejía Ramos / Frontend Developer
+// Date: 2025 / 03 / 13
+// Description: Navbar component
+
 import { Component } from '@angular/core';
 
 @Component({
