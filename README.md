@@ -23,8 +23,7 @@ Una aplicación web para gestionar tareas, desarrollada con **Angular** en el fr
 
 ### 🔹 Clonar el repositorio o descargar el .zip y descomprimir
 ```sh 
-  git clone https://github.com/tu-repo/task-management-app.git 
-  cd task-management-app
+  git clone https://github.com/pepecodes2000/Task-Management-App.git
 ```
 
 ### 🔹 Configurar el Backend
